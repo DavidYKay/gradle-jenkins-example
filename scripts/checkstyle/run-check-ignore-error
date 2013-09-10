@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function test {
+  "$@"
+  status=$?
+  if [ $status -ne 0 ]; then
+    echo "error with $1"
+  fi
+  #return $status
+  return 0
+}
+
+test ./run-check-prod

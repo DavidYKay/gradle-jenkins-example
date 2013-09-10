@@ -1,0 +1,2 @@
+#!/bin/bash
+checkstyle -c style.xml -r ../../MobiJunk/src -f xml -o ../../MobiJunk/build/reports/checkstyle_errors.xml

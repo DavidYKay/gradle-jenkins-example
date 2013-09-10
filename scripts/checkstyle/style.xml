@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+<module name="Checker">
+
+  <module name="SuppressionFilter">
+    <property name="file" value="suppressions.xml"/>
+  </module>
+
+  <property name="localeLanguage" value="en"/>
+  <property name="charset" value="UTF-8"/>
+
+  <!--This guy checks for package-info.java-->
+  <!--<module name="JavadocPackage"/>-->
+
+  <module name="TreeWalker">
+    <property name="fileExtensions" value="java"/>
+    <property name="tabWidth" value="2"/>
+    <module name="Indentation">
+      <property name="caseIndent" value="2"/>
+      <property name="basicOffset" value="2"/>
+      <property name="braceAdjustment" value="0"/>
+    </module>
+
+    <module name="GenericWhitespace"/>
+    <module name="AvoidStarImport"/>
+    <module name="ConstantName"/>
+    <module name="EmptyBlock"/>
+
+    <module name="MemberName"/>
+    <module name="AbstractClassName"/>
+    <module name="ConstantName"/>
+    <module name="MethodName"/>
+    <module name="TypeName"/>
+  </module>
+
+  <module name="StrictDuplicateCode">
+    <property name="min" value="15"/>
+  </module>
+
+</module>
