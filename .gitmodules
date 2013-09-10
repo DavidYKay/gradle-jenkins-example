@@ -1,0 +1,3 @@
+[submodule "vendor/volley"]
+	path = vendor/volley
+	url = git@github.com:GargoyleSoftware/volley.git
